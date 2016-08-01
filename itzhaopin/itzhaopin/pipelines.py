@@ -18,6 +18,5 @@ class JsonWithEncodingTencentPipeline(object):
         return item
 
     def spider_closed(self, spider):
-        self.file.close(
-)
+        self.file.close()
 

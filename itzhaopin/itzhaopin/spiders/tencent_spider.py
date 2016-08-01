@@ -24,7 +24,7 @@ class TencentSpider(CrawlSpider):
         "http://hr.tencent.com/position.php"
     ]
     rules = [
-        Rule(sle(allow=("/position.php\?&start=\d{,4}#a")), follow=True, callback='parse_item')
+        Rule(sle(allow=("/position.php\?&start=\d{,3}#a")), follow=True, callback='parse_item')
     ]
 
     def parse_item(self, response):
